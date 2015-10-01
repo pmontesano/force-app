@@ -81,8 +81,9 @@ gulp.task('cssBuild', function() {
                     browsers: ['last 5 versions', 'android >= 2.1', '> 1%']
                 })
             ]))
-            .pipe($.replace(/(?:url\()(\'|\"|\.{1,2})*(\/*.*\/)*(.+\.png|jpg|gif|svg)/g, src.build.images + '$3'))
-            .pipe($.replace(/(?:url\()(\'|\"|\.{1,2})*(\/*.*\/)*(.+\.eot|woff|ttf|otf)/g, src.build.fonts + '$3'))
+
+            .pipe($.replace(/(url\()(\'|\"|\.{1,2})*(\/*.*\/)*(.+\.[png|jpg|gif|svg]{3}.*)(\2\))/g, '$1$2images/$4$5'))
+            .pipe($.replace(/(url\()(\'|\"|\.{1,2})*(\/*.*\/)*(.+\.[eot|woff|ttf|otf|svg]{3,4}.*)(\2\)){1}/g, '$1$2fonts/$4$5'))
             .pipe($.concat(bundle + '.css'))
             .pipe($.size({
                 title: bundle + '.css size: '
@@ -123,8 +124,8 @@ gulp.task('fontBuild', function() {
    }
 
    //App Fonts
-   gulp.src('./src/fonts/**/*.+(eot|svg|ttf|woff)')
-       .pipe(gulp.dest(src.build.fonts))
+   // gulp.src('./src/fonts/**/*.+(eot|svg|ttf|woff)')
+   //     .pipe(gulp.dest(src.build.fonts))
 
 });
 

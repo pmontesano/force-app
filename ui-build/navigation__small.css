@@ -6,8 +6,8 @@
  */
 @font-face {
   font-family: navigation;
-  src: ui-build/fonts/icons.eot);
-  src: ui-build/fonts/icons.eot#iefix) format("embedded-opentype"), url(../icons.woff) format("woff"), url(../icons.ttf) format("truetype"), url(../icons.svg#navigation) format("svg");
+  src: url(fonts/icons.eot);
+  src: url(fonts/icons.svg#navigation) format("svg");
   font-style: normal;
   font-weight: 400; }
 
@@ -225,7 +225,7 @@ body {
   pointer-events: none; }
 
 .nav-logo {
-  background-image: ui-build/images/logo__small.png);
+  background-image: url(images/logo__small.png);
   background-repeat: no-repeat;
   display: inline-block;
   height: 32px;
@@ -238,7 +238,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .nav-logo {
-    background-image: ui-build/images/logo__small@2x.png);
+    background-image: url(images/logo__small@2x.png);
     -webkit-background-size: 47px 32px;
     background-size: 47px 32px; } }
 

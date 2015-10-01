@@ -6,8 +6,8 @@
  */
 @font-face {
   font-family: navigation;
-  src: ui-build/fonts/icons.eot);
-  src: ui-build/fonts/icons.eot#iefix) format("embedded-opentype"), url(../icons.woff) format("woff"), url(../icons.ttf) format("truetype"), url(../icons.svg#navigation) format("svg");
+  src: url(fonts/icons.eot);
+  src: url(fonts/icons.svg#navigation) format("svg");
   font-style: normal;
   font-weight: 400; }
 
@@ -214,7 +214,7 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .nav-logo {
-    background-image: ui-build/images/logo__small@2x.png);
+    background-image: url(images/logo__small@2x.png);
     -webkit-background-size: 47px 32px;
     background-size: 47px 32px; } }
 
@@ -462,21 +462,21 @@ body, html {
   background-color: #fefbd6; }
 
 .nav-logo {
-  background-image: ui-build/images/logo__large.png);
+  background-image: url(images/logo__large.png);
   height: 40px;
   top: 7px;
   width: 159px; }
 
 [data-country=BR] .nav-logo, [data-country=PT] .nav-logo {
-  background-image: ui-build/images/logo-pt__large.png); }
+  background-image: url(images/logo-pt__large.png); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .nav-logo {
-    background-image: ui-build/images/logo__large@2x.png);
+    background-image: url(images/logo__large@2x.png);
     -webkit-background-size: 159px 40px;
     background-size: 159px 40px; }
   [data-country=BR] .nav-logo, [data-country=PT] .nav-logo {
-    background-image: ui-build/images/logo-pt__large@2x.png); } }
+    background-image: url(images/logo-pt__large@2x.png); } }
 
 .nav-search {
   padding: 7px 5px;

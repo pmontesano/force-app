@@ -45,53 +45,6 @@
       width: 50%;
       margin-top: 50px; } }
 
-/**
-* main file
-* @authors: pmontesano
-* @description: main file, mobile
-*/
-.ml-force-app {
-  overflow: hidden; }
-  .ml-force-app[class*=ch-box] {
-    margin-top: 10px; }
-  .ml-force-app-title {
-    font-size: 22px;
-    line-height: 22px;
-    margin: auto;
-    max-width: 78%; }
-  .ml-force-app-text {
-    color: #999;
-    font-size: 15px;
-    line-height: 18px;
-    padding: 10 20px; }
-  .ml-force-app-actions {
-    margin-top: 0; }
-  .ml-force-app-title,
-  .ml-force-app-text,
-  .ml-force-app-actions {
-    text-align: center; }
-  .ml-force-app-figure {
-    background: url("images/device@2x.png") no-repeat; }
-  .ml-force-app-qr {
-    display: none; }
-
-@media (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) {
-  .ml-force-app {
-    background: #ffffff;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #ffffff), color-stop(80%, #f5f5f5), to(#f5f5f5));
-    background: -webkit-linear-gradient(top, #ffffff 80%, #f5f5f5 80%, #f5f5f5 100%);
-    background: linear-gradient(to bottom, #ffffff 80%, #f5f5f5 80%, #f5f5f5 100%); }
-    .ml-force-app-figure {
-      -webkit-background-size: 80% 80%;
-              background-size: 80%;
-      float: left;
-      height: 217px;
-      width: 150px; }
-    .ml-force-app-actions {
-      float: right;
-      width: 50%;
-      margin-top: 50px; } }
-
 @media (min-width: 768px) {
   /**
 * main file

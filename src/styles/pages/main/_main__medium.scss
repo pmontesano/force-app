@@ -3,3 +3,60 @@
 * @authors: pmontesano
 * @description: main file, tablet and desktop
 */
+
+
+.ml-force-app {
+
+	background: #ffffff;
+	background: linear-gradient(to bottom,  #ffffff 80%,#f5f5f5 80%,#f5f5f5 100%);
+
+	&[class*=ch-box] {
+		margin-top: 40px;
+	}
+
+	&-title {
+		font-size: 24px;
+
+		[class*=ch-box] & {
+			margin-top: 80px;
+		}
+	}
+
+	&-text {
+		font-size: 16px;
+	}
+
+	&-figure {
+		background-size: 100%;
+		width: 300px;
+		height: 433px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		margin: 40px 40px 20px;
+	}
+
+	&-md {
+		float: left;
+		width: 50%;
+	}
+
+	&-qr {
+		display: flex;
+		max-width: 300px;
+		margin: 20px auto 0;
+
+		img + img {
+			margin-top: 10px;
+		}
+	}
+
+	& .ml-force-app-col {
+		width: 50%;
+		text-align: center;
+	}
+
+	&-actions {
+		display: none;
+	}
+
+}
