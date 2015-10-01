@@ -1,0 +1,27 @@
+/**
+* main file
+* @authors: pmontesano
+* @description: main file, mobile
+*/
+.ml-force-app[class*=ch-box] {
+  margin-top: 10px; }
+
+.ml-force-app-title {
+  font-size: 22px;
+  line-height: 22px;
+  margin: auto;
+  max-width: 78%; }
+
+.ml-force-app-text {
+  color: #999;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 10 20px; }
+
+.ml-force-app-button {
+  margin-top: 0; }
+
+.ml-force-app-title,
+.ml-force-app-text,
+.ml-force-app-button {
+  text-align: center; }
